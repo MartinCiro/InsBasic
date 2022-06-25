@@ -97,8 +97,6 @@ do
    then
    pip install $line4 
   fi
-done
-IFS=$old_IFS     # restablece el separador de campo predeterminado
 sudo apt update
 sudo apt upgrade -y
 
@@ -122,3 +120,5 @@ sudo sudo mv vmpkPiano* /opt/VmPiano/
 sudo bash genymotion-3.2.1-linux_x64.bin -y
 cd ~/
 rm -fr ~/LubuntuInsBasic
+done
+IFS=$old_IFS     # restablece el separador de campo predeterminado
