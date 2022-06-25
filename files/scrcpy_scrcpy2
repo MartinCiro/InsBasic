@@ -1,0 +1,9 @@
+[Desktop Entry]
+X-SnapInstanceName=Scrcpy
+Name=Scrcpy Multiple
+Comment=Display and control your Android device
+Terminal=true
+Type=Application
+Exec=env /opt/sndcpy/ejecucion
+Icon=/snap/scrcpy/379/usr/local/share/icons/hicolor/256x256/apps/scrcpy.png
+Categories=Acces;

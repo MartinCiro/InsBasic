@@ -1,0 +1,8 @@
+[Desktop Entry]
+X-SnapInstanceName=screenC
+Name=Change screen
+Comment=Cambia el fondo de pantalla
+Terminal=true
+Type=Application
+Exec=bash /opt/cscreen/screenP
+Icon=/opt/cscreen/screen.png
