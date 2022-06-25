@@ -1,0 +1,37 @@
+#!/bin/bash
+#Este script extrae todas los main y activity de un programa
+oldIFS=$IFS     # conserva el separador de campo
+IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
+for line in $(cat $HOME/apt)
+do
+  dpkg -l | grep $line
+  if [ $? -ne 0 ]
+   then
+   sudo apt install $line -y   
+  fi
+done
+for line2 in $(cat $HOME/snap.)
+do
+  dpkg -l | grep $line2
+  if [ $? -ne 0 ]
+   then
+   sudo snap install $line2   
+  fi
+done
+for line3 in $(cat $HOME/flatpak)
+do
+  dpkg -l | grep $line3
+  if [ $? -ne 0 ]
+   then
+   sudo flatpak install $line3 -y   
+  fi
+for line4 in $(cat $HOME/pip)
+do
+  dpkg -l | grep $line4
+  if [ $? -ne 0 ]
+   then
+   pip install $line4 
+  fi
+
+done
+IFS=$old_IFS     # restablece el separador de campo predeterminado
