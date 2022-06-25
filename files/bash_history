@@ -1,0 +1,29 @@
+/var/lib/snapd/desktop/applications
+vaciar
+nb
+up
+xs
+q
+cls
+kdenlive
+kilk
+ssa
+suvi
+sudo mount /dev/sda4 /media/ciro/551576405C802D0E
+delo
+ssa
+/run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_9_d6bbce390408/Almacenamiento interno compartido/DCIM/ScreenRecorder
+kilv
+curl -o 'Ca11.mp4' 'https://m70.uqload.org/3rfk5p2ipzw2q4drdkz7pkhtahz3q5vb7oqll2nfy57aa2fyxadnqa4ou3kq/v.mp4' -H 'Accept: */*' -H 'Accept-Language: es-419,es;q=0.9' -H 'Connection: keep-alive' -H 'Referer: https://uqload.com/' -H 'Sec-Fetch-Dest: video' --compressed
+sshpass -p ciro ssh -p 8022 u0_a338@192.168.0.7
+q
+killall -i whatsdesk
+sshpass -p ciro ssh -p 8022 u0_a252@192.168.0.7
+git clone https://github.com/Yisus7u7/termux-ngrok
+sshpass -p ciro ssh -p 13831 u0_a338@2.tcp.ngrok.io
+sudo apt update
+sudo apt upgrade
+sudo do-release-upgrade -d
+clear
+/run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_9_d6bbce390408/Almacenamiento interno compartido/DCIM/ScreenRecordernb
+nh

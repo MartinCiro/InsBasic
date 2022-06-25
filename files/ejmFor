@@ -1,0 +1,13 @@
+#!/bin/bash
+adb shell pm list packages | tail -n +2 | awk '{print substr($0,9, length($0) -0)}' > /dev/null 2>&1 >> a.txt
+#while IFS= read -r line; do echo $line; done < a.txt
+
+ 
+oldIFS=$IFS     # conserva el separador de campo
+IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
+for line in $(cat a.txt)
+do
+  adb shell dumpsys package | grep -Eo "^[[:space:]]+[0-9a-f]+[[:space:]]+${line}/[^[:space:]]+" | grep -oE "[^[:space:]]+$" >> n.txt
+done
+IFS=$old_IFS     # restablece el separador de campo predeterminado
+

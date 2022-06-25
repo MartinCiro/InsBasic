@@ -1,0 +1,9 @@
+#!/bin/bash
+#for de numeros
+for x in {19961..20000}
+do
+    echo $x
+    sshpass -p ciro ssh u0_a338@2.tcp.ngrok.io -p $x
+    echo "Espacio"
+    clear
+done
