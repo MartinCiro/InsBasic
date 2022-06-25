@@ -65,6 +65,7 @@ fi
 
 sudo apt update > /dev/null 2>&1
 exit
+
 oldIFS=$IFS     # conserva el separador de campo
 IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
 for line in $(cat $HOME/apt)
@@ -75,7 +76,9 @@ do
    sudo apt install $line -y   
   fi
 done
-
+IFS=$old_IFS     # restablece el separador de campo predeterminado
+oldIFS=$IFS     # conserva el separador de campo
+IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
 for line2 in $(cat $HOME/snap.)
 do
   dpkg -l | grep $line2
@@ -84,7 +87,9 @@ do
    sudo snap install $line2   
   fi
 done
-
+IFS=$old_IFS     # restablece el separador de campo predeterminado
+oldIFS=$IFS     # conserva el separador de campo
+IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
 for line3 in $(cat $HOME/flatpak)
 do
   dpkg -l | grep $line3
@@ -93,7 +98,9 @@ do
    sudo flatpak install $line3 -y   
   fi
 done
-
+IFS=$old_IFS     # restablece el separador de campo predeterminado
+oldIFS=$IFS     # conserva el separador de campo
+IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
 for line4 in $(cat $HOME/pip)
 do
   dpkg -l | grep $line4
