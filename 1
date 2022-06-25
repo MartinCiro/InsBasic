@@ -78,7 +78,7 @@ done
 IFS=$old_IFS     # restablece el separador de campo predeterminado
 oldIFS=$IFS     # conserva el separador de campo
 IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
-for line2 in $(cat $HOME/snap.)
+for line2 in $(cat $HOME/snapd)
 do
   dpkg -l | grep $line2
   if [ $? -ne 0 ]
