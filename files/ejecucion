@@ -1,0 +1,52 @@
+#! /bin/bash
+get_adb_devices() {
+    adb $ADB_SERVER devices $LONG 2>&1 | tail -n +2 | awk '{print substr($0,1, length($0) -7)}'
+}
+
+PROGNAME=$(basename $0)
+VERSION="3.4.0"
+UNAME=$(uname)
+DEVICE_OPT=
+LONG=
+ADB_SERVER=
+
+[ -n "$DEVICE_OPT" ] && exit 0
+DEV=$(get_adb_devices)
+if [ -z "$DEV" ]
+then
+    echo "$PROGNAME: ERROR: There's no locally connected devices."
+elif echo "$DEV" | grep -q 'daemon started successfully'
+then
+    # try again
+    DEV=$(get_adb_devices)
+fi
+N=$(echo "$DEV" | wc -l | sed 's/ //g')
+
+case $N in
+1)
+    # only one device detected
+    D=$DEV
+    ;;
+
+*)
+    # more than one device detected
+    OLDIFS=$IFS
+    IFS="
+"
+    PS3="Select the device to use, <Q> to quit: "
+    select D in $DEV
+    do
+        [ "$REPLY" = 'q' -o "$REPLY" = 'Q' ] && exit 2
+        [ -n "$D" ] && break
+    done < /dev/tty
+
+    IFS=$OLDIFS
+    ;;
+esac
+
+if [ -z "$D" ]
+then
+    echo "$PROGNAME: ERROR: target device couldn't be determined" >&2
+    exit 1
+fi
+exec /snap/bin/scrcpy -Sw -s $D

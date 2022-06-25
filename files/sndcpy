@@ -1,0 +1,48 @@
+,m   #!/bin/bash
+set -e
+ADB=${ADB:-adb}
+VLC=${VLC:-vlc}
+SNDCPY_APK=${SNDCPY_APK:-sndcpy.apk}
+SNDCPY_PORT=${SNDCPY_PORT:-28200}
+
+serial=
+#Instalacion de adb
+package="android-tools-adb"
+package2="vlc"
+dpkg -s $package &> /dev/null
+if [ $? -ne 0 ]
+   then
+      echo "Estoy instalando los paquetes..."
+        sudo apt-get update
+        sudo apt-get install $package -y
+     echo "ENTER"
+     read espacio
+fi
+dpkg -s $package2 &> /dev/null
+if [ $? -ne 0 ]
+   then
+      echo "Estoy instalando los paquetes..."
+        sudo apt-get update
+        sudo apt-get install $package2 -y
+fi
+
+#crear tunel
+"$ADB" $serial wait-for-device
+<<asd
+"$ADB $serial install -t -r -g $SNDCPY_APK 
+||
+{
+    echo Uninstalling existing version first...'
+    "$ADB $serial uninstall com.rom1v.sndcpy
+    $ADB $serial install -t -g $SNDCPY_APK
+}
+
+"$ADB $serial shell appops set com.rom1v.sndcpy PROJECT_MEDIA allow
+asd
+"$ADB" $serial forward tcp:$SNDCPY_PORT localabstract:sndcpy
+"$ADB" $serial shell am start com.rom1v.sndcpy/.MainActivity
+
+sleep 2
+
+echo Playing audio...
+"$VLC" -Idummy --demux rawaud --network-caching=0 --play-and-exit tcp://localhost:"$SNDCPY_PORT"

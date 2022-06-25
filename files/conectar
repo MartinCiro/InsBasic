@@ -1,0 +1,29 @@
+#!/bin/bash
+
+a=192.168.0.
+#pedir el ultimo digito del ip
+i=1
+while [ "$i" -le 10 ]; do
+    b=$a$i
+    echo "Conectando..."
+	#conectar a pc linux
+	i=$(( i + 1 ))
+	sshpass -p ciro ssh -p 8022 user@$b
+	clear
+	if [ $? -ne 0 ]
+   		then
+      	ssh -p 8022 user@$b
+      	clear
+      	if [ $? -ne 0 ]
+   		then 
+      	ssh-keygen -f ~/.ssh/known_hosts -R "[${b}]:8022" > /dev/null 2>&1
+      	ssh -p 8022 user@$b
+      	clear
+      	else
+      	echo "conectado con exito"
+    fi
+    else
+    echo "Conectado a ${b}"
+	fi
+done 
+

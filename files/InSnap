@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Ingrese el nombre de los paquetes"
+read package
+echo "Ingrese la contraseña root"
+sudo snap install $package
+echo "Saliendo de la terminal"
+exit

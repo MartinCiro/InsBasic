@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Ingrese el nombre de los paquetes"
+read package
+#concatenar los paquetes
+echo "Ingrese la contraseña root"
+sudo apt install -y $package
+sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y
+echo "Saliendo de la terminal"
+exit

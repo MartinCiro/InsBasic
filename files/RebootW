@@ -1,0 +1,3 @@
+#!/bin/bash
+history -c && sudo grub-reboot 4
+reboot

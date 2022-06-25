@@ -1,0 +1,4 @@
+#!/bin/bash
+#https://gist.github.com/gabrielkfr/6338173
+DIA=`date +"%Y-%m-%d"`
+rm -fr $DIA*

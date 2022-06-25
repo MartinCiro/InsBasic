@@ -1,0 +1,10 @@
+[Desktop Entry]
+
+Name=Reiniciar en windows
+
+GenericName[es]=Reinicio en windows
+Exec=bash /opt/RebW/RebootW
+Terminal=true
+Icon=/opt/RebW/Reboot-session-windows.png
+Type=Application
+Categories=System;X-Leave;

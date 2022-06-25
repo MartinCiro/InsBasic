@@ -1,0 +1,10 @@
+#!/bin/bash
+xrandr --output VGA-1 --mode 1440x900 --pos 0x0 --output HDMI-1 --mode 1680x1050 --above VGA-1 > /dev/null 2>&1
+if [ $? -ne 0 ]
+   then
+      pcmanfm-qt -w "$(find /usr/share/lxqt/themes/dark/wallpaper2.jpg -type f | shuf -n1)"
+      xrandr --output HDMI-1 --off
+else
+pcmanfm-qt -w "$(find /usr/share/lxqt/themes/dark/above.png -type f | shuf -n1)"
+xrandr --output VGA-1 --mode 1440x900 --pos 0x0 --output HDMI-1 --mode 1680x1050 --above VGA-1 > /dev/null 2>&1
+fi
