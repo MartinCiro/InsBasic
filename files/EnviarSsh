@@ -15,11 +15,8 @@ n="/data/data/com.termux/files/home/"
 echo "ingrese la contraseña"
 #conectar a pc linux
 ssh-keygen -f "~/.ssh/known_hosts2" -R "[${b}]"
-sshpass -p ciro scp -P 8022 $arch u0_a338@$b:$n$rt
-sshpass -p ciro scp -P 8022 $arch u0_a338@$b:$n$rt
-sshpass -p ciro scp -P 8022 $arch u0_a153@$b:$n$rt
-scp -P 8022 $arch u0_a338@$b:$n$rt
-scp -P 8022 $arch u0_a153@$b:$n$rt
+sshpass -p ciro scp -P 8022 $arch user@$b:$n$rt
+scp -P 8022 $arch user@$b:$n$rt
 
 #Para enviar carpetas: -r antes del puerto
 #sshpass -p ciro scp -P 8022 -r $arch u0_a338@$b:$n$rt
