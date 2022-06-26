@@ -116,6 +116,7 @@ wget -i https://download.flightgear.org/builds/2020.3/FlightGear-2020.3.13-x86_6
 wget -np https://dl.genymotion.com/releases/genymotion-3.2.1/genymotion-3.2.1-linux_x64.bin
 wget https://github.com/pianobooster/PianoBooster/releases/download/v1.0.0/PianoBooster-1.0.0-x86_64.AppImage
 wget -np https://sourceforge.net/projects/vmpk/files/vmpk/0.8.7/vmpk-0.8.7-linux-x86_64.AppImage/download -O vmpkPiano.AppImage
+wget -np https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 sudo mv screenP /opt/cscreen/screenP
 sudo sudo mv conectar /opt/cxtermux/
@@ -129,6 +130,8 @@ sudo sudo mv RebootW* /opt/RebW/
 sudo sudo mv mv completoSnd copia2 ejecucion prototipox snd* /opt/sndcpy/
 sudo sudo mv vmpkPiano* /opt/VmPiano/
 
+sudo chmod 777 google-chrome-stable*
+sudo dpkg -i google-chrome-stable*
 sudo bash genymotion-3.2.1-linux_x64.bin -y
 cd ~/
 rm -fr ~/LubuntuInsBasic
