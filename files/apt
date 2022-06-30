@@ -387,6 +387,8 @@ gnustep-common
 google-chrome-stable
 gparted-common
 gparted
+apt-transport-https 
+curl
 gpg-agent
 gpg-wks-client
 gpg-wks-server
