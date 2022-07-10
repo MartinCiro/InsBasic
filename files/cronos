@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo apt install cron -y
+sudo /etc/init.d/cron start
+sudo /etc/init.d/cron restart
