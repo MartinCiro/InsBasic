@@ -64,6 +64,8 @@ if [ $? -ne 0 ]
 fi
 
 sudo apt update > /dev/null 2>&1
+sudo /etc/init.d/cron start
+sudo /etc/init.d/cron restart
 
 oldIFS=$IFS     # conserva el separador de campo
 IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
