@@ -139,7 +139,16 @@ sudo apt install mkusb mkusb-nox usb-pack-efi -y
 sudo chmod 777 google-chrome-stable*
 sudo dpkg -i google-chrome-stable*
 sudo bash genymotion-3.2.1-linux_x64.bin -y
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz &> /dev/null
+tar -xvzf ngrok-v3-stable-linux-amd64.tgz &> /dev/null
+chmod 777 ngrok &> /dev/null
+sudo mv ngrok /usr/bin/ngrok
+echo "Ingrese el token de ngrok"
+read ng
+ngrok config add-authtoken $ng
 cd ~/
+
+
 rm -fr ~/LubuntuInsBasic
 rm -fr ~/apt 
 rm -fr ~/flatpak
