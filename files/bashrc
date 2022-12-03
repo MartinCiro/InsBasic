@@ -120,6 +120,9 @@ alias kilv='killall -I vlc'
 alias kilf='killall -I firefox'
 alias kr='sudo kdenlive'
 alias ft='featherpad'
+alias ytmp4='yt-dlp -f b '
+alias gam='cd ~/Música/Lenguajes/ && git add * && git commit -m "'
+alias cdm='cd ~/Música/'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -144,3 +147,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

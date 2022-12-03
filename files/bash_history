@@ -14,16 +14,40 @@ delo
 ssa
 /run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_9_d6bbce390408/Almacenamiento interno compartido/DCIM/ScreenRecorder
 kilv
-curl -o 'Ca11.mp4' 'https://m70.uqload.org/3rfk5p2ipzw2q4drdkz7pkhtahz3q5vb7oqll2nfy57aa2fyxadnqa4ou3kq/v.mp4' -H 'Accept: */*' -H 'Accept-Language: es-419,es;q=0.9' -H 'Connection: keep-alive' -H 'Referer: https://uqload.com/' -H 'Sec-Fetch-Dest: video' --compressed
+curl -o 'Ca11.mp4' 'link.mp4' -H 'Accept: */*' -H 'Accept-Language: es-419,es;q=0.9' -H 'Connection: keep-alive' -H 'Referer: https://uqload.com/' -H 'Sec-Fetch-Dest: video' --compressed
 sshpass -p ciro ssh -p 8022 u0_a338@192.168.0.7
 q
 killall -i whatsdesk
-sshpass -p ciro ssh -p 8022 u0_a252@192.168.0.7
 git clone https://github.com/Yisus7u7/termux-ngrok
 sshpass -p ciro ssh -p 13831 u0_a338@2.tcp.ngrok.io
-sudo apt update
-sudo apt upgrade
 sudo do-release-upgrade -d
 clear
 /run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_9_d6bbce390408/Almacenamiento interno compartido/DCIM/ScreenRecordernb
 nh
+scrcpy -s d6bbce390408
+wget -np link
+scp -P 8022 * user@192.168.0.7:/data/data/com.termux/files/home/Downloads/
+sshpass -p ciro ssh -p 8022 u0_a252@192.168.0.6
+htop
+/sbin/ethtool -s INTERFACE wol g
+ifconfig
+/sbin/ethtool -s enp2s0 wol g
+sudo /sbin/ethtool -s enp2s0 wol g
+ssa
+adb device
+adb devices
+yt-dlp -f b url -o nombre.mp4
+ytmp4 
+git status && git commit -am "
+git push origin gh-pages 
+mariadb -u admin -p
+/usr/sbin/mysqld --skip-grant-tables --skip-networking
+sudo /usr/sbin/mysqld --skip-grant-tables --skip-networking
+sudo /usr/sbin/mysqld user=root --skip-grant-tables --skip-networking
+sudo /usr/sbin/mysqld -u user=root -p --skip-grant-tables --skip-networking
+sudo /usr/sbin/mysqld -u root -p --skip-grant-tables --skip-networking
+sudo /usr/sbin/mysqld -u root --skip-grant-tables --skip-networking
+sudo do-release-upgrade
+history -c && sudo -i
+gam
+

@@ -1,0 +1,23 @@
+#!/bin/bash
+sudo apt update &> /dev/null 2>&1
+dpkg -s golang &> /dev/null
+if [ $? -ne 0 ]
+   then
+      echo "golang no está instalado, instalando..."
+      sudo apt-get install golang -y &> /dev/null 2>&1
+      if [ $? -ne 0 ]
+   		then
+      	echo "El paquete no se encuentra disponible en aptitude, se instalara desde snap"
+      	sudo snap install go --classic &> /dev/null 2>&1
+fi
+fi
+echo "Se está Instalando/actualizando"
+cd ~/
+wget -q https://go.dev/dl/ &> /dev/null 2>&1
+sudo tar -xvf go* -C /usr/local/ &> /dev/null 2>&1
+export PATH=$PATH:/usr/local/go/bin
+rm go*
+sudo apt update > /dev/null 2>&1
+export PATH=$PATH:/usr/local/go/bin
+sudo mkdir ~/go
+echo "Instalado con exito" 
