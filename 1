@@ -16,51 +16,35 @@ sudo mv bash_history ~/.bash_history
 sudo mv ejmForN ~/.ejmForN
 sudo mv ejmFor ~/.ejmFor
 
-sudo mkdir /opt/
-sudo mkdir /opt/cscreen
-sudo mkdir /opt/cxtermux
-sudo mkdir /opt/EliFecha
-sudo mkdir /opt/envtermux
-sudo mkdir /opt/FlightGear
-sudo mkdir /opt/genymobile
-sudo mkdir /opt/InSnap
-sudo mkdir /opt/instalar
-sudo mkdir /opt/PianoBooster
-sudo mkdir /opt/RebW
-sudo mkdir /opt/sndcpy
-sudo mkdir /opt/VmPiano
+sudo mkdir /opt/ /opt/cscreen /opt/cxtermux /opt/EliFecha /opt/envtermux /opt/FlightGear /opt/genymobile /opt/InSnap /opt/instalar /opt/PianoBooster /opt/RebW /opt/sndcpy /opt/VmPiano /opt/updGo
 
 sudo apt update > /dev/null 2>&1
-psn="snap"
-psnd="snapd"
-ppp="python3"
-ppip="python3-pip"
-dpkg -s $psn &> /dev/null
+dpkg -s snap &> /dev/null
 if [ $? -ne 0 ]
    then
-      echo "${psn} no está instalado, instalando..."
-      sudo apt-get install $psn -y > /dev/null 2>&1
+      echo "snap no está instalado, instalando..."
+      sudo apt-get install snap -y > /dev/null 2>&1
 fi
 
-dpkg -s $psnd &> /dev/null
+dpkg -s snapd &> /dev/null
 if [ $? -ne 0 ]
    then
-      echo "${psnd} no está instalado, instalando..."
-      sudo apt-get install $psnd -y > /dev/null 2>&1
+      echo "snapd no está instalado, instalando..."
+      sudo apt-get install snapd -y > /dev/null 2>&1
 fi
 
-dpkg -s $ppp &> /dev/null
+dpkg -s python3 &> /dev/null
 if [ $? -ne 0 ]
    then
-      echo "${ppp} no está instalado, instalando..."
-      sudo apt-get install $ppp -y > /dev/null 2>&1
+      echo "python3 no está instalado, instalando..."
+      sudo apt-get install python3 -y > /dev/null 2>&1
 fi
 
-dpkg -s $ppip &> /dev/null
+dpkg -s python3-pip &> /dev/null
 if [ $? -ne 0 ]
    then
-      echo "${ppip} no está instalado, instalando..."
-      sudo apt-get install $ppip -y > /dev/null 2>&1
+      echo "python3-pip no está instalado, instalando..."
+      sudo apt-get install python3-pip -y > /dev/null 2>&1
 fi
 
 sudo apt update > /dev/null 2>&1
@@ -77,9 +61,9 @@ do
    sudo apt install $line -y   
   fi
 done
-IFS=$old_IFS     # restablece el separador de campo predeterminado
-oldIFS=$IFS     # conserva el separador de campo
-IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
+IFS=$old_IFS
+oldIFS=$IFS
+IFS=$'\n'
 for line2 in $(cat $HOME/snapd)
 do
   dpkg -l | grep $line2
@@ -88,9 +72,9 @@ do
    sudo snap install $line2   
   fi
 done
-IFS=$old_IFS     # restablece el separador de campo predeterminado
-oldIFS=$IFS     # conserva el separador de campo
-IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
+IFS=$old_IFS
+oldIFS=$IFS
+IFS=$'\n'
 for line3 in $(cat $HOME/flatpak)
 do
   dpkg -l | grep $line3
@@ -99,9 +83,9 @@ do
    sudo flatpak install $line3 -y   
   fi
 done
-IFS=$old_IFS     # restablece el separador de campo predeterminado
-oldIFS=$IFS     # conserva el separador de campo
-IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
+IFS=$old_IFS
+oldIFS=$IFS
+IFS=$'\n'
 for line4 in $(cat $HOME/pip)
 do
   dpkg -l | grep $line4
@@ -110,7 +94,7 @@ do
    pip install $line4 
   fi
 done
-IFS=$old_IFS     # restablece el separador de campo predeterminado
+IFS=$old_IFS 
 sudo apt update
 sudo apt upgrade -y
 
@@ -120,7 +104,7 @@ wget https://github.com/pianobooster/PianoBooster/releases/download/v1.0.0/Piano
 wget -np https://sourceforge.net/projects/vmpk/files/vmpk/0.8.7/vmpk-0.8.7-linux-x86_64.AppImage/download -O vmpkPiano.AppImage
 wget -np https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-mv screenP /opt/cscreen/screenP
+sudo mv screenP /opt/cscreen/screenP
 sudo mv conectar /opt/cxtermux/
 sudo mv Eliminar /opt/EliFecha/
 sudo mv EnviarSsh /opt/envtermux/
@@ -131,13 +115,14 @@ sudo mv PianoBooster* /opt/PianoBooster/
 sudo mv RebootW* /opt/RebW/
 sudo mv mv completoSnd copia2 ejecucion prototipox snd* /opt/sndcpy/
 sudo mv vmpkPiano* /opt/VmPiano/
+sudo mv actGo /opt/updGo/
 
 sudo add-apt-repository ppa:mkusb/ppa
 sudo apt update
 sudo apt install mkusb mkusb-nox usb-pack-efi -y
 
-sudo chmod 777 google-chrome-stable*
-sudo dpkg -i google-chrome-stable*
+sudo chmod 777 google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo bash genymotion-3.2.1-linux_x64.bin -y
 wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz &> /dev/null
 tar -xvzf ngrok-v3-stable-linux-amd64.tgz &> /dev/null
