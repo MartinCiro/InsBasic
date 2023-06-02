@@ -141,7 +141,11 @@ alias ca='flutter build apk --split-per-abi'
 alias fth='featherpad $HOME/.bash_history'
 alias app='flutter build apk --split-per-abi'
 alias hwr='history -c && bash /opt/RebW/RebootW'
-alias cdg='cd ~/Música/git/SenaProyects/ && git add * && git commit -am "Se actualiza" && git push'
+alias cms='cd ~/Música/git/SenaProyects/docs/js && git add * && git commit -am "Se actualiza contenido" && git push'
+
+
+#origen a destino
+#ln -s /home/ciro/Música/git/SenaProyects/docs/js ~/JuDv
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
