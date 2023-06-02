@@ -16,7 +16,7 @@ sudo mv bash_history ~/.bash_history
 sudo mv ejmForN ~/.ejmForN
 sudo mv ejmFor ~/.ejmFor
 
-sudo mkdir /opt/ /opt/cscreen /opt/cxtermux /opt/EliFecha /opt/envtermux /opt/FlightGear /opt/genymobile /opt/InSnap /opt/instalar /opt/PianoBooster /opt/RebW /opt/sndcpy /opt/VmPiano /opt/updGo
+sudo mkdir /opt/ /opt/cscreen /opt/cxtermux /opt/EliFecha /opt/envtermux /opt/FlightGear /opt/genymobile /opt/InSnap /opt/instalar /opt/PianoBooster /opt/RebW /opt/sndcpy /opt/VmPiano /opt/updGo /opt/TextSnatcher
 
 sudo apt update > /dev/null 2>&1
 dpkg -s snap &> /dev/null
@@ -47,6 +47,7 @@ if [ $? -ne 0 ]
       sudo apt-get install python3-pip -y > /dev/null 2>&1
 fi
 
+sudo apt install scrcpy -y > /dev/null 2>&1
 sudo apt update > /dev/null 2>&1
 sudo /etc/init.d/cron start
 sudo /etc/init.d/cron restart
@@ -112,6 +113,8 @@ wget -np https://dl.genymotion.com/releases/genymotion-3.2.1/genymotion-3.2.1-li
 wget https://github.com/pianobooster/PianoBooster/releases/download/v1.0.0/PianoBooster-1.0.0-x86_64.AppImage
 wget -np https://sourceforge.net/projects/vmpk/files/vmpk/0.8.7/vmpk-0.8.7-linux-x86_64.AppImage/download -O vmpkPiano.AppImage
 wget -np https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget -q https://raw.githubusercontent.com/MartinCiro/SenaProyects/gh-pages/docs/media/sgv/TextSnatcher.svg
+
 
 sudo mv screenP /opt/cscreen/screenP
 sudo mv conectar /opt/cxtermux/
@@ -125,6 +128,7 @@ sudo mv RebootW* /opt/RebW/
 sudo mv mv completoSnd copia2 ejecucion prototipox snd* /opt/sndcpy/
 sudo mv vmpkPiano* /opt/VmPiano/
 sudo mv actGo /opt/updGo/
+sudo mv TextSnatcher.svg /opt/TextSnatcher
 
 sudo add-apt-repository ppa:mkusb/ppa
 sudo apt update

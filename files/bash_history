@@ -50,4 +50,4 @@ sudo /usr/sbin/mysqld -u root --skip-grant-tables --skip-networking
 sudo do-release-upgrade
 history -c && sudo -i
 gam
-
+cdg

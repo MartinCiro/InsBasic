@@ -2464,7 +2464,6 @@ xterm
 xtrans-dev
 xxd
 xz-utils
-youtube-dl
 yudit-common
 zenity-common
 zenity
@@ -2477,3 +2476,10 @@ zstd
 zsync
 libgtkglext1
 libpangox-1.0-0
+valac
+meson
+libgee-0.8-dev
+libgtk-4-dev
+libsass-dev
+sassc
+libgranite-dev
