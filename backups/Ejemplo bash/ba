@@ -1,0 +1,9 @@
+#!/bin/bash
+#for de numeros
+for x in {4..25}
+do
+    echo "Descargando capitulo ${x}"
+    wget -i https://s12.fastream.to/cawdaldixkfhjaemkww4zupqfy6posjjhw2nwsuxbjnqumurqaoqk5ednnsa/Spy_x_Family.temp1.cap$x.latino.mp4
+    $x++
+done
+

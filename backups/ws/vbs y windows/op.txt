@@ -1,0 +1,41 @@
+#!/bin/bash
+echo "Ingrese las unidades ndo"
+read uni
+
+echo "Ingrese las unidades TVBOX"
+read tvb
+
+echo "Ingrese el dia final del mes actual"
+read df
+
+sumadi=$(echo "$uni+$tvb" | bc)
+
+echo "Numero de dias instalado"
+read d
+
+unis=$(echo "$uni*10000" | bc)
+tvbs=$(echo "$tvb*15000" | bc)
+sum=$(echo "$tvbs+$unis" | bc)
+echo $sum
+
+echo "Ingrese la renta mensual actual"
+read ren
+
+rentaIn=$(echo "$ren+$sum" | bc)
+
+ins=$(echo "36000*$sumadi" | bc)
+
+echo -e "\n"
+echo $sum
+echo $df
+echo $d
+echo $rentaIn
+echo $ins
+echo -e "\n"
+
+echo "Eli"
+read l
+
+final=$(echo "$sum/$df*$d+$rentaIn+$ins" | bc)
+
+echo $final

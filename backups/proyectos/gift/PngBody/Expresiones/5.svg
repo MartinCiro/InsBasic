@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 800 800"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="5.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:export-filename="/home/ciro/Desktop/gift/Expresiones/a.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1227"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="289.91378"
+     inkscape:cy="487.90368"
+     inkscape:window-width="1440"
+     inkscape:window-height="840"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1222">
+    <linearGradient
+       id="linearGradient278756"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop278754" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1997"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ff54c4;stop-opacity:1;"
+         offset="0"
+         id="stop1995" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Capa 2">
+    <path
+       style="fill:#dbdbdb;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 790.43909,366.3519 C 751.55056,-55.159351 9.3419776,20.293574 10.21733,359.82245 17.084623,487.02919 80.754603,544.70376 145.77178,594.35026 L 67.296578,728.3117 C 121.78891,712.89408 195.12311,676.85096 238.42834,635.90924 626.45292,746.78051 794.19919,511.44989 790.43909,366.3519 Z"
+       id="path318316"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:181.701px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       x="42.088104"
+       y="344.79855"
+       id="text322815"
+       transform="scale(0.79533185,1.2573368)"><tspan
+         sodipodi:role="line"
+         x="42.088104"
+         y="344.79855"
+         style="fill:#ff0000;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan460305">¡</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:181.701px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       x="115.03727"
+       y="344.76431"
+       id="text322815-5"
+       transform="scale(0.79533185,1.2573368)"><tspan
+         sodipodi:role="line"
+         x="115.03727"
+         y="344.76431"
+         style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan460305-0">Dios mío</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:181.701px;line-height:1.25;font-family:sans-serif;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       x="907.76514"
+       y="344.77081"
+       id="text322815-5-6"
+       transform="scale(0.79533185,1.2573368)"><tspan
+         sodipodi:role="line"
+         x="907.76514"
+         y="344.77081"
+         style="fill:#ff0000;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan460305-0-1">!</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="672.48877"
+       y="529.46075"
+       id="text520616"><tspan
+         sodipodi:role="line"
+         id="tspan520614"
+         x="672.48877"
+         y="529.46075" /></text>
+  </g>
+</svg>

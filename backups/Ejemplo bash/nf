@@ -1,0 +1,5 @@
+am start --user 0 -n com.android.settings/.Settings
+read a
+
+am start --user 0 -n com.dts.freefireth/.FFMainActivity
+read c

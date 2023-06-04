@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "hola"
+#qterminal ssh-keygen -t rsa -b 4096 -C "martinciro11@gmail.com"

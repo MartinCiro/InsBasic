@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 800 800"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="4.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1227"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.77733138"
+     inkscape:cx="370.49836"
+     inkscape:cy="434.17776"
+     inkscape:window-width="1440"
+     inkscape:window-height="840"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     inkscape:snap-global="false" />
+  <defs
+     id="defs1222">
+    <linearGradient
+       id="linearGradient1997"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ff54c4;stop-opacity:1;"
+         offset="0"
+         id="stop1995" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Capa 2">
+    <path
+       style="fill:#00efe5;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M -3.7301217,332.38078 C 46.165925,459.24937 249.16138,531.81237 440.60629,523.74957 c 25.37259,-2.74798 86.18391,-14.21614 100.61684,-32.51 l 8.91098,13.8571 c -1.10395,47.82848 -200.99226,122.86746 -556.7515689,3.91215 z"
+       id="path870"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#00efe5;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 540.00898,509.1129 9.67411,47.5105 15.39821,-7.88847 2.80052,-49.97292 95.09368,-40.20115 -1.15356,126.1163 25.58353,-16.25458 30.03432,-134.75945 56.57208,-32.68917 9.95592,-11.21387 c 9.30551,-16.24009 -3.4596,-24.69844 -21.71972,-19.74426 l -64.11612,26.50174 -126.73615,-56.06635 -26.51897,10.46959 100.92858,74.22721 -86.02086,52.26963 -44.32791,-26.83252 -15.62179,7.71943 31.58028,37.46428 z"
+       id="path4325"
+       sodipodi:nodetypes="cccccccccccccccccccc" />
+  </g>
+</svg>

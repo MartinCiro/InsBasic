@@ -1,0 +1,17 @@
+#!/bin/bash
+
+a=192.168.0.
+#pedir el ultimo digito del ip
+echo "numero" 
+read s
+#concatenar variable a con variable s
+b=$a$s
+echo "Cual es el archivo a enviar"
+read rut
+echo "Conectando..."
+#Enviar archivos a pc
+#sshpass -p Ciro1234 scp $rut ciro@$b:$HOME/scp
+sshpass -p Ciro1234 scp $rut ciro@$b:/home/ciro/scp
+sshpass -p Ciro1234 scp EnvA.Pc ciro@8.tcp.ngrok.io -p 14922:/home/ciro/scp
+
+echo "\033[0;31mEnviado.\033[0m"

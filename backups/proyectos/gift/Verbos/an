@@ -1,0 +1,9 @@
+#!/bin/bash
+oldIFS=$IFS     # conserva el separador de campo
+IFS=$'\n'     # nuevo separador de campo, el caracter fin de línea
+for line in $(cat a)
+do
+  #ln -s /usr/bin/an /home/ciro/Desktop/gift/Verbos/${line}/an
+  unlink $line
+done
+IFS=$old_IFS     # restablece el separador de campo predeterminado

@@ -1,0 +1,33 @@
+@echo off
+
+color B
+SET /P Ndo="Ingrese las unidades ndo: "
+SET /P tvb="Ingrese las unidades TVBOX: "
+
+set /a sumadi = %Ndo%+%tvb%
+cls
+
+color F
+SET /P df="Ingrese el dia final del mes actual: "
+SET /P dst="Ingrese los dias transcurridos: "
+
+
+set /a NdoD = %Ndo%*10000
+set /a tvbD = %tvb%*15000
+set /a sum = %NdoD%+%tvbD%
+
+set /a ins = 36000*%sumadi%
+
+
+SET /P renM="Ingrese la renta mensual actual: "
+set /a rentaIn = %renM%+%sum%
+
+
+set /a final = %sum%/%df%*%dst%+%rentaIn%+%ins%+12,6451612903
+
+cls
+color C
+ECHO El valor es: %final%
+
+ECHO Presione una tecla para cerrar
+pause>nulz

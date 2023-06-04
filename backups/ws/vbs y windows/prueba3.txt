@@ -1,0 +1,15 @@
+Prorrateo
+35900 al 55900
+fecha de corte 1
+1-14 con la anterior
+14-1 con la nueva
+
+corte: 1
+plan actual: 39900
+llama el 15 de junio y contrata un plan de 55900
+
+39900/30*14=18620
+55900/30*16=29813,33333333333
+proporcional total = 48433,33333333333-plan actual (33900)=8,533 + 55,900 = 64,433
+
+upgrade a corte o de inmediato

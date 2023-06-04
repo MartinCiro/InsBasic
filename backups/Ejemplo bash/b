@@ -1,0 +1,107 @@
+#!/bin/bash
+echo "¿Configurar ahora? y/n"
+read ert
+if [ "$ert" == "y" ] || [ "$ert" == "yes" ] || [ "$ert" == "YES" ] || [ "$ert" == "Y" ] || [ "$ert" == "si" ] || [ "$ert" == "sí" ] || [ "$ert" == "SI" ] || [ "$ert" == "SÍ" ]; then
+clear
+echo "Configurando script de descarga videos de facebook"
+echo "Reemplazar correo y contraseña: "
+sleep 2
+clear
+echo "Ingrese el correo: "
+read cor
+read -p "Ingrese la contraseña: " pas
+sed -i "s/AquíCorreoFacebook/$cor/" $HOME/.shortcuts/DescargarFbk
+sed -i "s/AquíPassdeFacebook/$pas/" $HOME/.shortcuts/DescargarFbk
+clear
+echo "¿Continuar configuracion?"
+read cont
+
+if [ "$cont" == "y" ] || [ "$cont" == "yes" ] || [ "$cont" == "YES" ] || [ "$cont" == "Y" ] || [ "$cont" == "si" ] || [ "$cont" == "sí" ] || [ "$cont" == "SI" ] || [ "$cont" == "SÍ" ]; then
+
+echo "¿Configurar Enviar archivos a termux? y/n"
+read sit
+if [ "$sit" == "y" ] || [ "$sit" == "yes" ] || [ "$sit" == "YES" ] || [ "$sit" == "Y" ] || [ "$sit" == "si" ] || [ "$sit" == "sí" ] || [ "$sit" == "SI" ] || [ "$sit" == "SÍ" ]; then
+clear
+#que hacer
+echo "Reemplazar user:"
+sleep 2
+clear
+echo "Ingrese el usuario de termux (destino): "
+read des
+sed -i "s/user/$des/" $HOME/.shortcuts/EnvA.T
+echo "Finalizado..."
+else
+echo "\033[0;36mFinalizado, en cualquier momento puede editar este scripts\033[0m"
+sleep 2
+clear
+fi
+
+echo "¿Configurar conectar con ngrok? y/n"
+read sit
+if [ "$sit" == "y" ] || [ "$sit" == "yes" ] || [ "$sit" == "YES" ] || [ "$sit" == "Y" ] || [ "$sit" == "si" ] || [ "$sit" == "sí" ]  || [ "$sit" == "SI" ] || [ "$sit" == "SÍ" ]; then
+clear
+echo "Acontinuacion digite su usuario y contraseña:"
+sleep 2
+clear
+echo "Ingrese el usuario (destino): "
+read udest
+echo "Ingrese la contraseña del usuario (destino): "
+read pdest
+sed -i "s/UsEr/$udest/" $HOME/.shortcuts/ng
+sed -i "s/PasSwOrD/$pdest/" $HOME/.shortcuts/ng
+echo "Finalizado..."
+else
+echo "\033[0;36mFinalizado, en cualquier momento puede editar este scripts\033[0m"
+sleep 2
+clear
+fi
+
+echo "¿Configurar Enviar archivos a PC? y/n"
+read pc
+if [ "$pc" == "y" ] || [ "$pc" == "yes" ] || [ "$pc" == "YES" ] || [ "$pc" == "Y" ] || [ "$pc" == "si" ] || [ "$pc" == "sí" ] || [ "$pc" == "SI" ] || [ "$pc" == "SÍ" ]; then
+clear
+#que hacer
+echo "Es necesario ingresar la contraseña y el usuario (destino)"
+sleep 2
+clear
+echo "Ingrese el usuario del PC (destino): "
+read desp
+echo "Ingrese la contraseña del usuario del PC (destino): "
+read despp
+sed -i "s/UsEr/$desp/" $HOME/.shortcuts/EnvA.Pc
+sed -i "s/PaSsWorD/$despp/" $HOME/.shortcuts/EnvA.Pc
+echo "Finalizado..."
+else
+echo "\033[0;36mFinalizado, en cualquier momento puede editar este scripts\033[0m"
+sleep 2
+clear
+fi
+
+echo "¿Configurar conectar con PC? y/n"
+read cpc
+if [ "$cpc" == "y" ] || [ "$cpc" == "yes" ] || [ "$cpc" == "YES" ] || [ "$cpc" == "Y" ] || [ "$cpc" == "si" ] || [ "$cpc" == "sí" ] || [ "$cpc" == "SI" ] || [ "$cpc" == "SÍ" ]; then
+clear
+echo "Ingrese el usuario y contraseña de PC (destino):"
+sleep 2
+clear
+echo "Ingrese el usuario de PC (destino): "
+read usPC
+echo "Ingrese la contraseña del usuario de PC (destino): "
+read usPCp
+sed -i "s/user/$usPC/" $HOME/.shortcuts/conectar
+sed -i "s/user/$usPCp/" $HOME/.shortcuts/conectar
+echo "Finalizado..."
+else
+echo "\033[0;36mFinalizado, en cualquier momento puede editar este scripts\033[0m"
+sleep 2
+clear
+fi
+
+else
+echo -e "\033[0;36mFinalizado, en cualquier momento puede editar los scripts faltantes:\nEnvA.T (user)\nng (pass + user)\nEnvA.T (user)\nnEnvA.Pc (pass + user)\nconectar (pass + user)\033[0m"
+fi
+
+#Que hacer en caso de que sea falso
+else
+echo -e "\033[0;36mFinalizado, en cualquier momento puede editar los scripts faltantes:\nEnvA.T (user)\nng (pass + user)\nEnvA.T (user)\nEnvA.Pc (pass + user)\nconectar (pass + user)\033[0m"
+fi

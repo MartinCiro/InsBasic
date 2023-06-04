@@ -34,20 +34,48 @@ ifconfig
 /sbin/ethtool -s enp2s0 wol g
 sudo /sbin/ethtool -s enp2s0 wol g
 ssa
-adb device
 adb devices
 yt-dlp -f b url -o nombre.mp4
 ytmp4 
 git status && git commit -am "
 git push origin gh-pages 
 mariadb -u admin -p
-/usr/sbin/mysqld --skip-grant-tables --skip-networking
-sudo /usr/sbin/mysqld --skip-grant-tables --skip-networking
-sudo /usr/sbin/mysqld user=root --skip-grant-tables --skip-networking
-sudo /usr/sbin/mysqld -u user=root -p --skip-grant-tables --skip-networking
-sudo /usr/sbin/mysqld -u root -p --skip-grant-tables --skip-networking
+
 sudo /usr/sbin/mysqld -u root --skip-grant-tables --skip-networking
 sudo do-release-upgrade
 history -c && sudo -i
 gam
-cdg
+
+convert -delay 20 -loop 0 *.svg migif3.gif
+ln -s Sdk/ /root/Android/
+sudo ln -s Sdk/ /root/Android/
+sudo mkdir /root/Android/
+sudo ln -s Sdk/ /root/Android/
+cd /root/
+sudo cd /root/
+sudo -i
+adb tcpip 5055
+adb connect 192.168.20.30:8080 && scrcpy -s 192.168.20.30:5055
+adb tcpip 5555; adb connect 192.168.20.30:5555 && scrcpy -s 192.168.20.30:5555
+flutter build apk
+sudo yt-dlp --format b[ext=mp4] https://vm.tiktok.com/ZM2JWTp3G/
+node index.js 
+stg
+cap
+montage *.svg -geometry +0+0 -tile x1 -background none sprite_output.png
+for file in *.svg; do rsvg-convert -f png -o "${file%.*}.png" "$file"; done && convert -dispose background -delay 10 *.png AtaqueEnemiAgua.gif
+adb tcpip 5555; adb connect 192.168.20.30:5555 && scrcpy -s 192.168.20.30:5555
+adb devices
+scrcpy
+adb connect 192.168.20.30:5555 && scrcpy -s 192.168.20.30:5555
+ssa
+nb
+cdm
+cd git/
+cd SenaProyects/docs/js/
+ls
+pwd
+cd ~/Música/git/SenaProyects/docs/js
+nb
+code .
+cms
