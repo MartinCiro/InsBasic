@@ -3,8 +3,8 @@ echo "URL"
 read URL
 ext=".mkv"
 name="video1"
-user="martinciro11@gmail.com"
-pass="paulailove1"
+user="skuish@hotmail.com"
+pass="ilove12345"
 names=$name$ext
 cd $HOME/Descargas/
 yt-dlp -f b $URL -o $names --username $user --password $pass
