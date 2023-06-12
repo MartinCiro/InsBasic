@@ -69,13 +69,6 @@ adb devices
 scrcpy
 adb connect 192.168.20.30:5555 && scrcpy -s 192.168.20.30:5555
 ssa
-nb
-cdm
-cd git/
-cd SenaProyects/docs/js/
-ls
-pwd
-cd ~/Música/git/SenaProyects/docs/js
-nb
-code .
 cms
+xmy
+cml
