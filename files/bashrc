@@ -144,6 +144,7 @@ alias hwr='history -c && bash /opt/RebW/RebootW'
 alias cms='cd ~/Música/git/SenaProyects/docs/js && git add * && git commit -am "Se actualiza contenido" && git push'
 alias xmy='/opt/lampp/bin/mysql.server start'
 alias cml='cd ~/Música/git/LubuntuInsBasic/ && git add * && git commit -am "Se actualiza contenido" && git push'
+alias rmM='rm /home/ciro/.mysql_history'
 
 #origen a destino
 #ln -s /home/ciro/Música/git/SenaProyects/docs/js ~/JuDv
