@@ -73,3 +73,10 @@ cms #commitSenaProyectPush
 xmy #StartXammp
 cml #commitLubuntuInBasicPush
 rmM #EliminarHistorialSQL
+cml
+cms
+cd ../..
+git commit -am "Se empieza con firebase"
+git add *
+git commit -am "Se empieza con firebase"
+git push
