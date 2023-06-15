@@ -68,15 +68,7 @@ adb tcpip 5555; adb connect 192.168.20.30:5555 && scrcpy -s 192.168.20.30:5555
 adb devices
 scrcpy
 adb connect 192.168.20.30:5555 && scrcpy -s 192.168.20.30:5555
-ssa
 cms #commitSenaProyectPush
 xmy #StartXammp
 cml #commitLubuntuInBasicPush
 rmM #EliminarHistorialSQL
-cml
-cms
-cd ../..
-git commit -am "Se empieza con firebase"
-git add *
-git commit -am "Se empieza con firebase"
-git push
