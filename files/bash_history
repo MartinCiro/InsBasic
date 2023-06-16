@@ -72,11 +72,4 @@ cms #commitSenaProyectPush
 xmy #StartXammp
 cml #commitLubuntuInBasicPush
 rmM #EliminarHistorialSQL
-php --ini
-sudo nano /etc/php/8.1/cli/php.ini
-ls /etc/php/8.1/cli/mysqli.so
-ls /etc/php/8.1/cli/mysqli
-ls /etc/php/8.1/cli/*
-ls /usr/lib/php/
-ls /usr/lib/php/8.1/
-sudo nano /etc/php/8.1/cli/php.ini
+cop #copyAndPushCrud
