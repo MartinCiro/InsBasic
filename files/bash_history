@@ -72,4 +72,4 @@ cms #commitSenaProyectPush
 xmy #StartXammp
 cml #commitLubuntuInBasicPush
 rmM #EliminarHistorialSQL
-cop #copyAndPushCrud
+cop #copyAndPushCrudMySql
