@@ -147,7 +147,7 @@ alias cml='cd ~/Música/git/LubuntuInsBasic/ && git add * && git commit -am "Se 
 alias rmM='rm /home/ciro/.mysql_history'
 alias cdC='cd ~/Música/git/CRUDMysql/ && git add * && git commit -am "Se agrega contenido" && git push'
 alias cop='cp -r /opt/lampp/htdocs/ejs/pruebas/a/* /home/ciro/Música/git/CRUDMysql/ && cdC'
-
+alias din='qpdf --decrypt --password=1002590978 origen.pdf destino.pdf'
 
 #origen a destino
 #ln -s /home/ciro/Música/git/SenaProyects/docs/js ~/JuDv
