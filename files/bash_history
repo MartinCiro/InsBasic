@@ -76,3 +76,4 @@ cop #copyAndPushCrudMySql
 code . 
 nano ~/JuDv/acces/Player/DefensaPlayer/Agua/svg/pb.sh
 qemu-system-x86_64 -M q35 -cpu qemu64 -smp 2 -m 3G -cdrom mini.iso -hda Debian.qcow2 -boot d -netdev user,id=n1,hostfwd=tcp::2222-:22 -device virtio-net,netdev=n1
+stDeb
