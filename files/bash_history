@@ -78,18 +78,3 @@ nano ~/JuDv/acces/Player/DefensaPlayer/Agua/svg/pb.sh
 qemu-system-x86_64 -M q35 -cpu qemu64 -smp 2 -m 3G -cdrom mini.iso -hda Debian.qcow2 -boot d -netdev user,id=n1,hostfwd=tcp::2222-:22 -device virtio-net,netdev=n1
 stDeb
 adb tcpip 5555; adb connect 192.168.20.22:5555 && scrcpy -s 192.168.20.22:5555
-np
-ls $PATH
-np
-nb
-np
-nb
-pb
-echo $pb
-np
-nano $PATCH
-nano $PATH
-nb
-np
-cd /opt/
-ls
