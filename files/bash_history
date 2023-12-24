@@ -82,3 +82,4 @@ adb tcpip 5555; adb connect 192.168.20.22:5555 && scrcpy -s 192.168.20.22:5555
 docker exec -it postgres bash -c "psql -U postgres "
 docker pull joriss/playonlinux
 sudo lsof -i :4000
+kill -9 21896
