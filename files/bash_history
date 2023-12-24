@@ -13,6 +13,7 @@ sudo mount /dev/sda4 /media/ciro/551576405C802D0E
 delo
 ssa
 /run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_9_d6bbce390408/Almacenamiento interno compartido/DCIM/ScreenRecorder
+ 
 kilv
 curl -o 'Ca11.mp4' 'link.mp4' -H 'Accept: */*' -H 'Accept-Language: es-419,es;q=0.9' -H 'Connection: keep-alive' -H 'Referer: https://uqload.com/' -H 'Sec-Fetch-Dest: video' --compressed
 sshpass -p ciro ssh -p 8022 u0_a338@192.168.0.7
@@ -79,3 +80,5 @@ qemu-system-x86_64 -M q35 -cpu qemu64 -smp 2 -m 3G -cdrom mini.iso -hda Debian.q
 stDeb
 adb tcpip 5555; adb connect 192.168.20.22:5555 && scrcpy -s 192.168.20.22:5555
 docker exec -it postgres bash -c "psql -U postgres "
+docker pull joriss/playonlinux
+sudo lsof -i :4000
