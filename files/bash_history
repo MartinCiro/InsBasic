@@ -83,3 +83,7 @@ docker exec -it postgres bash -c "psql -U postgres "
 docker pull joriss/playonlinux
 sudo lsof -i :4000
 kill -9 21896
+npm run dev
+npm i
+npm run dev
+ffmpeg -i \[www.mega1080.com\]VALERIANMILPLANET4SHD1080P.mkv -c:v copy -c:a aac -strict experimental VALERIANMILPLANET4SHD1080P.mkv
