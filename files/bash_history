@@ -87,3 +87,9 @@ npm run dev
 npm i
 ffmpeg -i \[www.mega1080.com\]VALERIANMILPLANET4SHD1080P.mkv -c:v copy -c:a aac -strict experimental VALERIANMILPLANET4SHD1080P.mkv
 rm -fr
+sudo apt install remmina -y
+remmina
+remina
+remmina
+cd 07-layaout/
+code .
