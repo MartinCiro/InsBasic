@@ -106,19 +106,9 @@ npm start
 npm install -g concurrently
 sudo npm install -g concurrently
 concurrently
-npm start
-npm i
-npm start
-npm i
-npm start
-npm install bcryptjs
-npm start
-npm install axios
-npm start
 clear
 npm start
 npm i
-npm start
 cdm
 ls
 cd git
@@ -132,33 +122,12 @@ nh
 nb
 spql
 sudo systemctl docker status
-dssssssssssssssfcls
-cls
 docker container ls -a
 docker exec -it psql
 docker exec -it psql bash
 docker start psql
 docker stop mongo
 docker stop mongo_express
-docker start psql
-docker --help
-docker ps -a
-docker ps -m
-docker ps -l
-docker stop playonlinux
-docker start psql
-docker ps
-sudo netstat -tuln | grep 5432
-sudo kill tcp
-docker ps -a
-sudo netstat -tuln | grep 5432
-sudo kill --h
-sudo netstat -tuln | grep 5432
-tcp
-sudo systemctl stop postgresql
-tcp
-sudo netstat -tuln | grep 5432
-sudo apt autoremove -y postgresql
 docker start psql
 docker exec -it psql bash
 docker exec -i psql pg_restore -U postgres -d gameapp -v < ./gameapp.backup
