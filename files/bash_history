@@ -141,7 +141,7 @@ php artisan key:generate
 php artisan config:cache
 php artisan serve
 htop
-qemu-system-x86_64 -enable-kvm -cpu host -smp 3 -m 4G -hda /media/ciro/vsbox/wLubuntu2.qcow2 -drive file=fat:rw:share -netdev user,id=n1 -device virtio-net,netdev=n1
+qemu-system-x86_64 -enable-kvm -cpu host -smp 3 -m 4G -hda /media/ciro/vsbox/w8-1.qcow2 -drive file=fat:rw:share -netdev user,id=n1 -device virtio-net,netdev=n1
 qemu-system-x86_64 -M q35 -cpu qemu64 -smp 2 -m 3G -cdrom mini.iso -hda Debian.qcow2 -boot d -netdev user,id=n1,hostfwd=tcp::2222-:22 -device virtio-net,netdev=n1
 
 qemu-system-x86_64 -enable-kvm -cpu host -smp 3 -m 4G -hda /media/ciro/vsbox/w8x64Lubuntu2.qcow2
