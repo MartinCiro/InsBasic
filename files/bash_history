@@ -147,4 +147,5 @@ php artisan breeze:install
 php artisan serve
 npm install
 npm run dev
+xrandr --addmode eDP1 1366x768_60.00
 xrandr --output eDP1 --mode 1366x768_60.00
