@@ -204,24 +204,25 @@ nh
 cx
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa_new
 qemu-system-x86_64 -enable-kvm -cpu host -smp 1 -m 2G -hda /media/ciro/vsbox/w8-1.qcow2 -drive file=fat:rw:/media/ciro/vsbox/share
-sudo netstat -tuln | grep 9000
 
-
-
-
-docker exec -it gameapp_app_1 nano /usr/local/etc/php-fpm.d/www.conf
-docker exec -it gameapp_app_1 php-fpm -tt
-docker exec -it gameapp_app_1 nano /usr/local/etc/php-fpm.d/www.conf
-docker exec -it gameapp_app_1 bash
-docker exec -it gameapp_app_1 cat /usr/local/etc/php-fpm.conf
-docker exec -it gameapp_app_1 nano /usr/local/etc/php-fpm.conf
-docker exec -it gameapp_app_1 nano /usr/local/etc/php-fpm.d/www.conf
-sudo nano /etc/apache2/sites-available/000-default.conf
-sudo rm /etc/apache2/sites-available/000-default.conf
-sudo nano /etc/apache2/sites-available/000-default.conf
-sudo a2enmod proxy
-sudo a2enmod proxy_fcgi
-sudo a2enmod setenvif
-systemctl restart apache2
-docker exec -it gameapp_app_1 netstat -tuln
+php artisan serve
+cd Descargas/adso2613934-main/08-laravel/
+find . *"menuburger"*
+find . *menuburger*
+locate . "menuburger"*
+locate . menuburger*
+locate  menuburger*
+cd ..
+find 08-laravel/ *menuburger*
+find 08-laravel/ menuburger
+find 08-laravel/ menuburger*
+find 08-laravel/ -name "menuburger*"
+find 08-laravel/ -name "input-error*"
+qemu-system-x86_64 -enable-kvm -cpu host -smp 1 -m 2G -hda /media/ciro/vsbox/w8-1.qcow2 -drive file=fat:rw:/media/ciro/vsbox/share
+composer install
+php artisan serve
+docker stop mongo
+docker stop mongo_express 
+docker ps
+docker  start psql
 php artisan serve
