@@ -226,3 +226,9 @@ docker stop mongo_express
 docker ps
 docker  start psql
 php artisan serve
+psql
+php artisan serve
+psql
+php artisan serve
+este no es
+php artisan serve
