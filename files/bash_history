@@ -207,28 +207,7 @@ qemu-system-x86_64 -enable-kvm -cpu host -smp 1 -m 2G -hda /media/ciro/vsbox/w8-
 
 php artisan serve
 cd Descargas/adso2613934-main/08-laravel/
-find . *"menuburger"*
-find . *menuburger*
-locate . "menuburger"*
-locate . menuburger*
-locate  menuburger*
-cd ..
-find 08-laravel/ *menuburger*
-find 08-laravel/ menuburger
-find 08-laravel/ menuburger*
 find 08-laravel/ -name "menuburger*"
 find 08-laravel/ -name "input-error*"
-qemu-system-x86_64 -enable-kvm -cpu host -smp 1 -m 2G -hda /media/ciro/vsbox/w8-1.qcow2 -drive file=fat:rw:/media/ciro/vsbox/share
-composer install
-php artisan serve
-docker stop mongo
-docker stop mongo_express 
-docker ps
-docker  start psql
 php artisan serve
 psql
-php artisan serve
-psql
-php artisan serve
-este no es
-php artisan serve
