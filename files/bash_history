@@ -211,3 +211,12 @@ find 08-laravel/ -name "menuburger*"
 find 08-laravel/ -name "input-error*"
 php artisan serve
 psql
+php artisan serve
+scrcpy
+scrcpy
+adb devices
+ssa
+scrcpy
+php artisan serve
+php artisan make:controller CategoryController --resource
+php artisan make:request CategoryRequest
