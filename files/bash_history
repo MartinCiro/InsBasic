@@ -220,3 +220,7 @@ scrcpy
 php artisan serve
 php artisan make:controller CategoryController --resource
 php artisan make:request CategoryRequest
+npm i
+npm run dev
+up
+php -S localhost:8000
