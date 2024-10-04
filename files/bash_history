@@ -268,7 +268,5 @@ npm start
 cd ../personalInventaryBack/
 npm run dev
 code .
-npm run dev
 docker exec -it psql bash
-docker exec -it psql bash
-npm run dev
+docker-compose up --build
