@@ -270,3 +270,5 @@ npm run dev
 code .
 docker exec -it psql bash
 docker-compose up --build
+docker exec psql pg_dump -U postgres -d softcalfutPSQL -F c -f /tmp/backup.db
+docker cp psql:/tmp/backup.db ./backup.db
