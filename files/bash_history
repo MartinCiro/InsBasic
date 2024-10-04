@@ -225,3 +225,50 @@ npm run dev
 up
 php -S localhost:8000
 watch -n 2 sensors
+docker exec -it psql bash
+php -S localhost:8000
+neofetch
+php -S localhost:8000
+npm run dev
+npm run dev
+docker exec -it bash 
+docker exec -it psql bash 
+psql
+docker exec -it psql bash 
+npm run dev
+npm  install bcrypt
+npm run dev
+npm i react-icons
+npm i styled-components
+npm i react-hook-form
+npm i react-router-dom
+npm i sweetalert2
+npm i zustand
+npm i @tanstack/react-query
+npm i @tanstack/react-table
+npm i @tanstack/react-query-devtools
+npm i @supabase/supabase-js
+npm i react-spinners
+npm i react-lottie
+npm i react-color
+npm start
+npm star
+npm run dev
+docker build -t pb .
+docker run -p 8080:8080 pb
+cd ../personalInventaryBack/
+npm run dev
+npm star
+npm run dev
+npm start
+npm install react-router-dom
+npm start
+npm install @tailwindcss/forms
+npm start
+cd ../personalInventaryBack/
+npm run dev
+code .
+npm run dev
+docker exec -it psql bash
+docker exec -it psql bash
+npm run dev
